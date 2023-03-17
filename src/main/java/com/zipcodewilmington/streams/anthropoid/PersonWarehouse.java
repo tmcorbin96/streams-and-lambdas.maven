@@ -36,7 +36,7 @@ public final class PersonWarehouse implements Iterable<Person> {
      * @return list of names of Person objects
      */ // TODO
     public List<String> getNames() {
-        return null;
+        return this.people.stream().map(Person:: getName).collect(Collectors.toList());
     }
 
 
